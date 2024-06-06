@@ -53,10 +53,10 @@ class _AcademicState extends State<Academic> {
             child: Icon(
               Icons.warning,
               size: 50,
-              color: Colors.blue,
+              color: Colors.purple,
             ),
           ),
-          content: const Text('\nNu aveti bani.\n\n'),
+          content: const Text('\nFonduri insuficiente\n\n'),
           actions: [
             ElevatedButton(
               onPressed: () {
@@ -77,7 +77,7 @@ class _AcademicState extends State<Academic> {
         'codigo': rng.toString(),
         'data': DateTime.now(),
         'user': user.uid,
-        'type': 'Traje'
+        'type': 'Uniforma'
       };
       await FirebaseFirestore.instance.collection('tickets').add(itemData);
     }
@@ -98,12 +98,12 @@ class _AcademicState extends State<Academic> {
     return Column(
       children: [
         const Text(
-          'Trajes',
+          'Uniforma',
           style: TextStyle(
               fontSize: 35, fontFamily: 'Poppins', fontWeight: FontWeight.w700),
         ),
         Text(
-          'Saldo: $currentMoney€',
+          'Sold Curent: $currentMoney€',
           style: const TextStyle(
             fontSize: 20,
             fontFamily: 'Poppins',
@@ -131,7 +131,7 @@ class _AcademicState extends State<Academic> {
             TextButton(
               onPressed: buyItem,
               child: Text(
-                'Comprar',
+                'Cumpara',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700,

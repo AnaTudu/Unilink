@@ -72,7 +72,8 @@ class _MyStoreState extends State<MyStore> {
                       _backVisibility = true;
                     });
                   },
-                  child: const Image(image: AssetImage('assets/images/qr.png')),
+                  child: const Image(
+                      image: AssetImage('assets/images/Parolă QR CODE.png')),
                 )),
             Visibility(
                 visible: _imagesVisibility,
@@ -85,7 +86,7 @@ class _MyStoreState extends State<MyStore> {
                     });
                   },
                   child: const Image(
-                      image: AssetImage('assets/images/Uniform.jpg')),
+                      image: AssetImage('assets/images/uniforme.png')),
                 )),
           ],
         ));
