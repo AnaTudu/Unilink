@@ -21,7 +21,7 @@ class SettingsListItem extends StatelessWidget {
           title: Text(name,
               style: const TextStyle(fontFamily: 'Poppins', fontSize: 20)),
           iconColor: Color(
-              int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+              int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
           onTap: () {
             Navigator.push(
               context,

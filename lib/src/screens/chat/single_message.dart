@@ -19,7 +19,7 @@ class SingleMessage extends StatelessWidget {
           constraints: const BoxConstraints(maxWidth: 200),
           decoration: BoxDecoration(
               color: isMe
-                  ? Color(int.parse("#0097b2".substring(1, 7), radix: 16) +
+                  ? Color(int.parse("#8c52ff".substring(1, 7), radix: 16) +
                       0xFF000000)
                   : Colors.black,
               borderRadius: const BorderRadius.all(Radius.circular(12))),

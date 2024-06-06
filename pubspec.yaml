@@ -55,6 +55,8 @@ dependencies:
   qr_flutter: ^4.1.0
   google_nav_bar: ^5.0.6
   syncfusion_flutter_pdfviewer: ^24.2.8
+  firebase_app_check: ^0.2.2+7
+  hydrated_bloc: ^9.1.5
   
 
 dev_dependencies:

@@ -61,7 +61,7 @@ class _ChatScreenState extends State<ChatScreen> {
               highlightColor: Colors.transparent,
               iconSize: 25,
               color: Color(
-                  int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                  int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
               onPressed: () {
                 Navigator.pop(context);
               }),

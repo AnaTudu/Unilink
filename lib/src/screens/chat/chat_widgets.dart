@@ -119,7 +119,7 @@ class _MessageTextFieldState extends State<MessageTextField> {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Color(
-                  int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                  int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
             ),
             child: const Icon(
               Icons.send,

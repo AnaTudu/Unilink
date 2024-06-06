@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -49,15 +46,17 @@ class DefaultFirebaseOptions {
     messagingSenderId: '884733483668',
     projectId: 'licenta-425311',
     authDomain: 'licenta-425311.firebaseapp.com',
+    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'licenta-425311.appspot.com',
     measurementId: 'G-R5HFRF7CNY',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCk7Uk4dMk5UeIfFXY9kk9nJyD_pDHKrOI',
-    appId: '1:884733483668:android:248f87d8fefd94ebbd3281',
+    appId: '1:884733483668:android:7d12dfeca7ade9cfbd3281',
     messagingSenderId: '884733483668',
     projectId: 'licenta-425311',
+    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'licenta-425311.appspot.com',
   );
 
@@ -66,6 +65,7 @@ class DefaultFirebaseOptions {
     appId: '1:884733483668:ios:d72e915a591a76f3bd3281',
     messagingSenderId: '884733483668',
     projectId: 'licenta-425311',
+    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'licenta-425311.appspot.com',
     iosBundleId: 'com.example.unilink',
   );
@@ -76,7 +76,19 @@ class DefaultFirebaseOptions {
     messagingSenderId: '884733483668',
     projectId: 'licenta-425311',
     authDomain: 'licenta-425311.firebaseapp.com',
+    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'licenta-425311.appspot.com',
     measurementId: 'G-HBL3EWG0Y7',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyAT_IE88r1epOcp3HL-zlG-p4QNtLimgOw',
+    appId: '1:884733483668:ios:d72e915a591a76f3bd3281',
+    messagingSenderId: '884733483668',
+    projectId: 'licenta-425311',
+    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'licenta-425311.appspot.com',
+    iosBundleId: 'com.example.unilink',
+  );
+
 }

@@ -72,7 +72,7 @@ class InfoTeacher extends StatelessWidget {
                           style: const TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 18,
-                              color: Colors.blue),
+                              color: Color.fromARGB(255, 127, 74, 180)),
                           textAlign: TextAlign.end),
                       const SizedBox(
                         height: 60,
@@ -180,7 +180,7 @@ class InfoTeacher extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Text('acces cu harta',
+                      const Text('Acces cu harta',
                           style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 18,
