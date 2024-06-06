@@ -41,7 +41,7 @@ class About extends StatelessWidget {
         Container(
             margin: const EdgeInsets.only(bottom: 60),
             child: const Image(
-              image: AssetImage("assets/images/aboutUni.png"),
+              image: AssetImage("assets/images/aboutus.jpg"),
               width: 400,
               height: 400,
             )),

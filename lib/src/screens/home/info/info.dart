@@ -179,7 +179,7 @@ class _MyWidgetState extends State<MyWidget> {
                                 }, // Image tapped
                                 child: const Image(
                                     image: AssetImage(
-                                        'assets/images/servicii.png')),
+                                        'assets/images/servicii.jpg')),
                               )
                             ],
                           ),

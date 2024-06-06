@@ -85,7 +85,7 @@ class _MyStoreState extends State<MyStore> {
                     });
                   },
                   child: const Image(
-                      image: AssetImage('assets/images/trajes.png')),
+                      image: AssetImage('assets/images/Uniform.jpg')),
                 )),
           ],
         ));
