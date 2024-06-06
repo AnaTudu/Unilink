@@ -46,7 +46,7 @@ class _SplashState extends State<Splash> {
                 width: double.infinity,
                 height: double.infinity,
                 decoration: const BoxDecoration(
-                  color: Color(0xff0f0e0e),
+                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 child: Center(
                   child: SizedBox(

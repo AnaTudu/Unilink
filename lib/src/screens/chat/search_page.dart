@@ -59,7 +59,7 @@ class _SearchPageState extends State<SearchPage> {
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 iconSize: 25,
-                color: Color(int.parse("#0097b2".substring(1, 7), radix: 16) +
+                color: Color(int.parse("#8c52ff".substring(1, 7), radix: 16) +
                     0xFF000000),
                 onPressed: () {
                   Navigator.pop(context);
@@ -81,7 +81,7 @@ class _SearchPageState extends State<SearchPage> {
           ElevatedButton(
             style: ElevatedButton.styleFrom(
                 backgroundColor: Color(
-                    int.parse("#0097b2".substring(1, 7), radix: 16) +
+                    int.parse("#8c52ff".substring(1, 7), radix: 16) +
                         0xFF000000)),
             onPressed: () async {
               final query = _searchController.text.trim();

@@ -71,7 +71,7 @@ class Registration extends StatelessWidget {
             AuthenticationBtn(
                 text: 'Creati cont',
                 backgroundColor: Color(
-                    int.parse("#0097b2".substring(1, 7), radix: 16) +
+                    int.parse("#8c52ff".substring(1, 7), radix: 16) +
                         0xFF000000),
                 foregroundColor: Colors.white,
                 function: () {
@@ -85,7 +85,7 @@ class Registration extends StatelessWidget {
                                 Icons.warning,
                                 size: 50,
                                 color: Color(int.parse(
-                                        "#0097b2".substring(1, 7),
+                                        "#8c52ff".substring(1, 7),
                                         radix: 16) +
                                     0xFF000000),
                               )),
@@ -102,7 +102,7 @@ class Registration extends StatelessWidget {
                                 Icons.warning,
                                 size: 50,
                                 color: Color(int.parse(
-                                        "#0097b2".substring(1, 7),
+                                        "#8c52ff".substring(1, 7),
                                         radix: 16) +
                                     0xFF000000),
                               )),
@@ -144,7 +144,7 @@ class Registration extends StatelessWidget {
                                 Icons.warning,
                                 size: 50,
                                 color: Color(int.parse(
-                                        "#0097b2".substring(1, 7),
+                                        "#8c52ff".substring(1, 7),
                                         radix: 16) +
                                     0xFF000000),
                               )),

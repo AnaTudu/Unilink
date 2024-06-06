@@ -52,7 +52,7 @@ class _DestinationState extends State<StatefulDestination> {
                       child: const Text(
                         'inapoi',
                         style: TextStyle(
-                          color: Color(0xFF0097b2),
+                          color: Color.fromARGB(255, 136, 81, 184),
                           fontSize: 20,
                           fontFamily: 'Poppins',
                         ),
@@ -79,7 +79,7 @@ class _DestinationState extends State<StatefulDestination> {
                   filter.clear();
                 });
               }),
-              DestinationChooseBox('Selecione o etajul', block, blocks,
+              DestinationChooseBox('Selectati etajul', block, blocks,
                   (String? value) {
                 setState(() {
                   block = value!;
@@ -95,7 +95,7 @@ class _DestinationState extends State<StatefulDestination> {
                   copy.addAll(filter);
                 });
               }),
-              DestinationChooseBox('Selecione ', floor, floors,
+              DestinationChooseBox('Selectați ', floor, floors,
                   (String? value) {
                 setState(() {
                   floor = value!;
@@ -116,7 +116,7 @@ class _DestinationState extends State<StatefulDestination> {
                               child: Icon(
                                 Icons.warning,
                                 size: 50,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 146, 74, 187),
                               )),
                           content: Text('\nNici un rezultat gasit!\n\n')),
                     );
@@ -151,7 +151,7 @@ class _DestinationState extends State<StatefulDestination> {
                                 child: Icon(
                                   Icons.warning,
                                   size: 50,
-                                  color: Colors.blue,
+                                  color: Color.fromARGB(255, 146, 74, 187),
                                 )),
                             content:
                                 Text('\nCompletați câmpurile necesare!\n\n')),
@@ -170,14 +170,14 @@ class _DestinationState extends State<StatefulDestination> {
                     }
                   },
                   style: ButtonStyle(
-                      backgroundColor:
-                          WidgetStateProperty.all(const Color(0xFF0097b2)),
+                      backgroundColor: WidgetStateProperty.all(
+                          Color.fromARGB(255, 146, 74, 187)),
                       foregroundColor: WidgetStateProperty.all(Colors.white),
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25.0),
                       ))),
-                  child: const Text('Continua',
+                  child: const Text('Continuă',
                       style: TextStyle(
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w700,

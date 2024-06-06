@@ -29,7 +29,7 @@ class EventDetailPage extends StatelessWidget {
                             'Inapoi',
                             style: TextStyle(
                               fontSize: 20,
-                              color: Color(int.parse("#0097b2".substring(1, 7),
+                              color: Color(int.parse("#8c52ff".substring(1, 7),
                                       radix: 16) +
                                   0xFF000000),
                               fontFamily: 'Poppins',
@@ -60,7 +60,7 @@ class EventDetailPage extends StatelessWidget {
                         fontFamily: 'Poppins',
                         fontSize: 30,
                         color: Color(
-                            int.parse("#0097b2".substring(1, 7), radix: 16) +
+                            int.parse("#8c52ff".substring(1, 7), radix: 16) +
                                 0xFF000000))),
                 Text(event.description,
                     style:

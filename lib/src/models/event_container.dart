@@ -92,7 +92,7 @@ class _ReaderScreenState extends State<EventsContainer> {
                 Text(widget.event.title,
                     style: TextStyle(
                         color: Color(
-                            int.parse("#0097b2".substring(1, 7), radix: 16) +
+                            int.parse("#8c52ff".substring(1, 7), radix: 16) +
                                 0xFF000000),
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
@@ -115,7 +115,7 @@ class _ReaderScreenState extends State<EventsContainer> {
                       foregroundColor:
                           WidgetStateProperty.all<Color>(Colors.white),
                       backgroundColor: WidgetStateProperty.all<Color>(Color(
-                          int.parse("#0097b2".substring(1, 7), radix: 16) +
+                          int.parse("#8c52ff".substring(1, 7), radix: 16) +
                               0xFF000000)),
                       shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
@@ -133,7 +133,7 @@ class _ReaderScreenState extends State<EventsContainer> {
                           color: color,
                         ),
                       ),
-                      const Text('Interesat',
+                      const Text('Interesati',
                           style: TextStyle(
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w700,

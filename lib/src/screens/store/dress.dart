@@ -53,7 +53,7 @@ class _AcademicState extends State<Academic> {
             child: Icon(
               Icons.warning,
               size: 50,
-              color: Colors.purple,
+              color: Color.fromARGB(255, 146, 74, 187),
             ),
           ),
           content: const Text('\nFonduri insuficiente\n\n'),
@@ -126,7 +126,7 @@ class _AcademicState extends State<Academic> {
             Container(
               margin: const EdgeInsets.only(right: 60),
               child:
-                  const Text('200€', style: TextStyle(fontFamily: 'Poppins')),
+                  const Text('200RON', style: TextStyle(fontFamily: 'Poppins')),
             ),
             TextButton(
               onPressed: buyItem,
@@ -135,7 +135,7 @@ class _AcademicState extends State<Academic> {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700,
-                  color: Color(int.parse("#0097b2".substring(1, 7), radix: 16) +
+                  color: Color(int.parse("#8c52ff".substring(1, 7), radix: 16) +
                       0xFF000000),
                 ),
               ),

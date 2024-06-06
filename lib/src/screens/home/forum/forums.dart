@@ -41,8 +41,7 @@ class _ReaderScreenState extends State<Forums> {
             return const Scaffold(
                 body: Center(child: CircularProgressIndicator()));
           } else if (snapshot.hasError) {
-            return const Center(
-                child: Text('Eroare la încercarea de a colecta date'));
+            return const Center(child: Text('Eroare '));
           } else {
             final forums = snapshot.data!;
 

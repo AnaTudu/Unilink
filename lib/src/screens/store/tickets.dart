@@ -61,10 +61,10 @@ class _MyWidgetState extends State<MyWidget> {
             child: Icon(
               Icons.warning,
               size: 50,
-              color: Colors.blue,
+              color: Color.fromARGB(255, 146, 74, 187),
             ),
           ),
-          content: const Text('\nNão tem saldo suficiente.\n\n'),
+          content: const Text('\nSold insuficient.\n\n'),
           actions: [
             ElevatedButton(
               onPressed: () {
@@ -85,7 +85,7 @@ class _MyWidgetState extends State<MyWidget> {
         'codigo': rng.toString(),
         'data': DateTime.now(),
         'user': user.uid,
-        'type': 'Senha',
+        'type': 'Parolă',
       };
       await FirebaseFirestore.instance.collection('tickets').add(ticketData);
     }
@@ -106,12 +106,12 @@ class _MyWidgetState extends State<MyWidget> {
     return Column(
       children: [
         const Text(
-          'Senhas',
+          'Parolă',
           style: TextStyle(
               fontSize: 35, fontFamily: 'Poppins', fontWeight: FontWeight.w700),
         ),
         Text(
-          'Saldo: $currentMoney€',
+          'Sold: $currentMoney€',
           style: const TextStyle(
             fontSize: 20,
             fontFamily: 'Poppins',
@@ -134,18 +134,18 @@ class _MyWidgetState extends State<MyWidget> {
             Container(
               margin: const EdgeInsets.only(right: 60),
               child: const Text(
-                '2€',
+                '10Ron',
                 style: TextStyle(fontFamily: 'Poppins'),
               ),
             ),
             TextButton(
               onPressed: buyTicket,
               child: Text(
-                'Comprar',
+                'Cumpără',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700,
-                  color: Color(int.parse("#0097b2".substring(1, 7), radix: 16) +
+                  color: Color(int.parse("#8c52ff".substring(1, 7), radix: 16) +
                       0xFF000000),
                 ),
               ),

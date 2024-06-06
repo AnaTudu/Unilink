@@ -1,5 +1,3 @@
-// ignore_for_file: unnecessary_null_comparison
-
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -83,7 +81,6 @@ class _CreateEventPageState extends State<CreateEventPage> {
       _descriptionController.clear();
       _selectedImage = null;
     } catch (e) {
-      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Failed to create event')),
       );
@@ -223,12 +220,12 @@ class _CreateEventPageState extends State<CreateEventPage> {
                 const SizedBox(height: 16.0),
                 ElevatedButton(
                   onPressed: () {
-                    if (_titleController.text == null ||
-                        _descriptionController == null ||
-                        _selectedImage == null ||
-                        _selectedDate == null ||
-                        _selectedMinutes == null ||
-                        _selectedTime == null) {
+                    if (_titleController.text == 0 ||
+                        _descriptionController.text == 0 ||
+                        _selectedImage == 0 ||
+                        _selectedDate == 0 ||
+                        _selectedMinutes == 0 ||
+                        _selectedTime == 0) {
                       showDialog(
                         context: context,
                         builder: (context) => const AlertDialog(

@@ -53,15 +53,12 @@ class _DestinationState extends State<StatefulDestination> {
         future: getUserData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            // Ir buscar os dados
             return const Scaffold(
                 body: Center(child: CircularProgressIndicator()));
           } else if (snapshot.hasError) {
-            // Ocorreu um erro ao tentar ir buscar os dados
             return const Scaffold(
                 body: Center(child: Text('Eroare la colecatrea datelor')));
           } else {
-            // Os dados foram obtidos com sucesso
             final userData = snapshot.data!;
             final name = userData.get('name');
             final photo = userData.get('photo');
@@ -78,14 +75,12 @@ class _DestinationState extends State<StatefulDestination> {
                 future: getImageUrl(photo),
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    // Encontrar o URL da imagem
                     return const Center(child: CircularProgressIndicator());
                   } else if (snapshot.hasError) {
                     // Ocorreu um erro ao obter a URL da imagem
                     return const Center(
                         child: Text('Eroare la obtinerea URL a imaginii'));
                   } else {
-                    // A URL da imagem foi obtido com sucesso
                     final imageUrl = snapshot.data;
                     return Scaffold(
                         resizeToAvoidBottomInset: false,
@@ -101,7 +96,7 @@ class _DestinationState extends State<StatefulDestination> {
                                   'inapoi',
                                   style: TextStyle(
                                     color: Color(int.parse(
-                                            "#0097b2".substring(1, 7),
+                                            "#8c52ff".substring(1, 7),
                                             radix: 16) +
                                         0xFF000000),
                                     fontSize: 20,
@@ -131,7 +126,7 @@ class _DestinationState extends State<StatefulDestination> {
                                     size: 15, color: Colors.grey),
                                 style: TextStyle(
                                   color: Color(int.parse(
-                                          "#0097b2".substring(1, 7),
+                                          "#8c52ff".substring(1, 7),
                                           radix: 16) +
                                       0xFF000000),
                                   fontFamily: 'Poppins',

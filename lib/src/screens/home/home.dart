@@ -177,7 +177,7 @@ class _MyHomeState extends State<MyHome> {
                               right: 15.0,
                             ),
                             child: HomeChooseOptionBtn(
-                              text: 'Mapa',
+                              text: 'Hartă',
                               icon: Icons.map_outlined,
                               function: () {
                                 Navigator.push(
