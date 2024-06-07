@@ -1,10 +1,5 @@
 {
   "projects": {
     "default": "licenta-425311"
-  },
-  "dataconnectEmulatorConfig": {
-    "postgres": {
-      "localConnectionString": "postgresql://localhost:5432?sslmode=disable"
-    }
   }
 }

@@ -22,12 +22,12 @@ class Menus extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        child: Text('inapoi',
+                        child: Text('Inapoi',
                             style: TextStyle(
                                 fontSize: 20,
                                 fontFamily: 'Poppins',
                                 color: Color(int.parse(
-                                        "#0097b2".substring(1, 7),
+                                        "#8c52ff".substring(1, 7),
                                         radix: 16) +
                                     0xFF000000)))),
                     const Text(
