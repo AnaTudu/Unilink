@@ -140,7 +140,7 @@ class _ProfileState extends State<Profile> {
               } else if (snapshot.hasError) {
                 // Ocorreu um erro ao obter a URL da imagem
                 return const Center(
-                    child: Text('Eroare la obtinearea adresei imaginii'));
+                    child: Text('Eroare la obtinearea adresei '));
               } else {
                 // A URL da imagem foi obtida com sucesso
                 final imageUrl = snapshot.data;
@@ -199,7 +199,7 @@ class _ProfileState extends State<Profile> {
                               text: 'Editare',
                               textColor: Colors.white,
                               backgroundColor: Color(int.parse(
-                                      "#0097b2".substring(1, 7),
+                                      "#8c52ff".substring(1, 7),
                                       radix: 16) +
                                   0xFF000000),
                               function: () {

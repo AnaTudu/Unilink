@@ -15,7 +15,7 @@ class ECabinet extends StatelessWidget {
                   Navigator.of(context).pop();
                 },
                 child: const Text(
-                  'inapoi',
+                  'Inapoi',
                   style: TextStyle(
                     fontSize: 20,
                     fontFamily: 'Poppins',
@@ -24,7 +24,7 @@ class ECabinet extends StatelessWidget {
         Container(
             margin: const EdgeInsets.only(top: 50, bottom: 10),
             child: const Text(
-              'Cabinet E+',
+              'Cabinet Medical',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -57,7 +57,7 @@ class ECabinet extends StatelessWidget {
                     width: 80,
                     height: 80),
                 Image(
-                    image: AssetImage('assets/images/ipslogo.png'),
+                    image: AssetImage('assets/images/logoupt.png'),
                     width: 80,
                     height: 80)
               ],

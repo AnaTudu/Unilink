@@ -25,7 +25,7 @@ class ADivision extends StatelessWidget {
         Container(
             margin: const EdgeInsets.only(top: 50, bottom: 10),
             child: const Text(
-              'Divizia\nAcademică',
+              'Secretariat',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -37,7 +37,7 @@ class ADivision extends StatelessWidget {
             margin:
                 const EdgeInsets.only(top: 50, bottom: 10, left: 40, right: 40),
             child: const Text(
-              'În cadrul Direcției Academice elevii efectuează toate actele legate de înscrierea și înscrierea lor în școlile Institutului.Politécnico de Setúbal. Os estudantes podem ainda obter informações relativas às Escolas, solicitar alterações que considerem necessárias, pedir comprovativos de matrícula, de frequência, entre outros. ',
+              'În cadrul Direcției Academice elevii efectuează toate actele legate de înscrierea și înscrierea lor în școlile Institutului. ',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black, fontFamily: 'Poppins', fontSize: 15),
@@ -46,7 +46,7 @@ class ADivision extends StatelessWidget {
             margin:
                 const EdgeInsets.only(top: 50, bottom: 10, left: 40, right: 40),
             child: const Text(
-              ' Cladirea A',
+              ' Liceu',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -67,7 +67,7 @@ class ADivision extends StatelessWidget {
             margin:
                 const EdgeInsets.only(top: 50, bottom: 10, left: 40, right: 40),
             child: const Text(
-              'Cladirea B',
+              'Generala',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -92,7 +92,9 @@ class ADivision extends StatelessWidget {
               'https://ac.upt.ro/',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Colors.blue, fontFamily: 'Poppins', fontSize: 15),
+                  color: Color.fromARGB(255, 127, 72, 173),
+                  fontFamily: 'Poppins',
+                  fontSize: 15),
             )),
         Container(
             margin: const EdgeInsets.only(top: 50, bottom: 50),
@@ -104,7 +106,7 @@ class ADivision extends StatelessWidget {
                     width: 80,
                     height: 80),
                 Image(
-                    image: AssetImage('assets/images/ipslogo.png'),
+                    image: AssetImage('assets/images/logoupt.png'),
                     width: 80,
                     height: 80)
               ],

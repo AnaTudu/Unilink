@@ -40,11 +40,11 @@ class _MyWidgetState extends State<MyWidget> {
                 Navigator.of(context).pop();
               },
               child: Text(
-                'inapoi',
+                'Inapoi',
                 style: TextStyle(
                   fontSize: 20,
                   fontFamily: 'Poppins',
-                  color: Color(int.parse("#0097b2".substring(1, 7), radix: 16) +
+                  color: Color(int.parse("#8c52ff".substring(1, 7), radix: 16) +
                       0xFF000000),
                 ),
               ))),
@@ -68,7 +68,7 @@ class _MyWidgetState extends State<MyWidget> {
           icon: const Icon(Icons.arrow_downward, size: 15),
           style: TextStyle(
             color: Color(
-                int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
           ),
           underline: Container(
             height: 1.5,
@@ -100,7 +100,7 @@ class _MyWidgetState extends State<MyWidget> {
           ),
           style: TextStyle(
             color: Color(
-                int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
           ),
           underline: Container(height: 1.5, color: Colors.grey),
           onChanged: (String? value) {
@@ -129,7 +129,7 @@ class _MyWidgetState extends State<MyWidget> {
           isExpanded: true,
           style: TextStyle(
             color: Color(
-                int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
           ),
           underline: Container(
             height: 1.5,
@@ -172,7 +172,7 @@ class _MyWidgetState extends State<MyWidget> {
           },
           style: ButtonStyle(
               backgroundColor: WidgetStateProperty.all(Color(
-                  int.parse("#0097b2".substring(1, 7), radix: 16) +
+                  int.parse("#8c52ff".substring(1, 7), radix: 16) +
                       0xFF000000)),
               foregroundColor: WidgetStateProperty.all(Colors.white),
               shape: WidgetStateProperty.all<RoundedRectangleBorder>(

@@ -58,7 +58,7 @@ class Services extends StatelessWidget {
                           );
                         }, // Image tapped
                         child: const Image(
-                            image: AssetImage('assets/images/divisaoa.png')),
+                            image: AssetImage('assets/images/cabinetmed.png')),
                       ),
                       GestureDetector(
                         onTap: () {
@@ -73,7 +73,7 @@ class Services extends StatelessWidget {
                           );
                         }, // Image tapped
                         child: const Image(
-                            image: AssetImage('assets/images/docentes.png')),
+                            image: AssetImage('assets/images/prof.png')),
                       ),
                       GestureDetector(
                         onTap: () {
@@ -88,7 +88,7 @@ class Services extends StatelessWidget {
                           );
                         }, // Image tapped
                         child: const Image(
-                          image: AssetImage('assets/images/gabinetee.png'),
+                          image: AssetImage('assets/images/secretar.png'),
                         ),
                       ),
                     ],

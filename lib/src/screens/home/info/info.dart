@@ -108,12 +108,12 @@ class _MyWidgetState extends State<MyWidget> {
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                   },
-                                  child: Text('inapoi',
+                                  child: Text('Inapoi',
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontFamily: 'Poppins',
                                           color: Color(int.parse(
-                                                  "#0097b2".substring(1, 7),
+                                                  "#8c52ff".substring(1, 7),
                                                   radix: 16) +
                                               0xFF000000)))),
                               const Text(
@@ -143,8 +143,8 @@ class _MyWidgetState extends State<MyWidget> {
                                   );
                                 }, // Image tapped
                                 child: const Image(
-                                    image: AssetImage(
-                                        'assets/images/ementas.png')),
+                                    image:
+                                        AssetImage('assets/images/meniu.png')),
                               ),
                               GestureDetector(
                                 onTap: () {
@@ -160,8 +160,7 @@ class _MyWidgetState extends State<MyWidget> {
                                   );
                                 }, // Image tapped
                                 child: const Image(
-                                  image: AssetImage(
-                                      'assets/images/calendarios.png'),
+                                  image: AssetImage('assets/images/calen.png'),
                                 ),
                               ),
                               GestureDetector(
@@ -178,8 +177,8 @@ class _MyWidgetState extends State<MyWidget> {
                                   );
                                 }, // Image tapped
                                 child: const Image(
-                                    image: AssetImage(
-                                        'assets/images/servicii.jpg')),
+                                    image:
+                                        AssetImage('assets/images/serv.png')),
                               )
                             ],
                           ),
