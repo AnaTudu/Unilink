@@ -58,7 +58,7 @@ class Services extends StatelessWidget {
                           );
                         }, // Image tapped
                         child: const Image(
-                            image: AssetImage('assets/images/cabinetmed.png')),
+                            image: AssetImage('assets/images/secretar.png')),
                       ),
                       GestureDetector(
                         onTap: () {
@@ -88,7 +88,7 @@ class Services extends StatelessWidget {
                           );
                         }, // Image tapped
                         child: const Image(
-                          image: AssetImage('assets/images/secretar.png'),
+                          image: AssetImage('assets/images/cabinetmed.png'),
                         ),
                       ),
                     ],

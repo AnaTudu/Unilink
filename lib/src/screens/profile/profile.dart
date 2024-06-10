@@ -127,7 +127,9 @@ class _ProfileState extends State<Profile> {
             final ref = FirebaseStorage.instance
                 .ref()
                 .child('ProfileImages/$imagePath');
+            print(" test1 " + imagePath);
             final url = await ref.getDownloadURL();
+            print(" test2 " + url);
             return url;
           }
 
@@ -140,7 +142,7 @@ class _ProfileState extends State<Profile> {
               } else if (snapshot.hasError) {
                 // Ocorreu um erro ao obter a URL da imagem
                 return const Center(
-                    child: Text('Eroare la obtinearea adresei '));
+                    child: Text('Eroare la obtinearea adresei imaginii '));
               } else {
                 // A URL da imagem foi obtida com sucesso
                 final imageUrl = snapshot.data;
@@ -220,7 +222,7 @@ class _ProfileState extends State<Profile> {
                             ProfileChooseOptionBtn(
                               text: 'Note',
                               textColor: Color(int.parse(
-                                      "#0097b2".substring(1, 7),
+                                      "#8c52ff".substring(1, 7),
                                       radix: 16) +
                                   0xFF000000),
                               backgroundColor: Colors.white,
@@ -238,7 +240,7 @@ class _ProfileState extends State<Profile> {
                             ProfileChooseOptionBtn(
                               text: 'Orar',
                               textColor: Color(int.parse(
-                                      "#0097b2".substring(1, 7),
+                                      "#8c52ff".substring(1, 7),
                                       radix: 16) +
                                   0xFF000000),
                               backgroundColor: Colors.white,
@@ -256,7 +258,7 @@ class _ProfileState extends State<Profile> {
                             ProfileChooseOptionBtn(
                               text: 'Cumpraturi',
                               textColor: Color(int.parse(
-                                      "#0097b2".substring(1, 7),
+                                      "#8c52ff".substring(1, 7),
                                       radix: 16) +
                                   0xFF000000),
                               backgroundColor: Colors.white,

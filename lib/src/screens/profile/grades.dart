@@ -121,7 +121,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    "Média Finala: ${mediaNotas.toStringAsFixed(2)}",
+                    "Media Finala: ${mediaNotas.toStringAsFixed(2)}",
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 16,

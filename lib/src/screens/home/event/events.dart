@@ -106,13 +106,17 @@ class Events extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              const Text(
-                                'Evenimente',
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  fontFamily: 'Poppins',
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w700,
+                              Container(
+                                width: 170,
+                                child: Text(
+                                  'Evenimente',
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: 25,
+                                    fontFamily: 'Poppins',
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
                               ),
                               const Spacer(),
@@ -129,7 +133,7 @@ class Events extends StatelessWidget {
                                           color: Colors.purple,
                                         ),
                                         onPressed: () {
-                                          Navigator.push(
+                                          Navigator.pushReplacement(
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
@@ -183,13 +187,17 @@ class Events extends StatelessWidget {
                               ),
                             ),
                           ),
-                          const Text(
-                            'Evenimente',
-                            style: TextStyle(
-                              fontSize: 40,
-                              fontFamily: 'Poppins',
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700,
+                          Container(
+                            width: 170,
+                            child: Text(
+                              'Evenimente',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                fontSize: 25,
+                                fontFamily: 'Poppins',
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
                           ),
                           const Spacer(),

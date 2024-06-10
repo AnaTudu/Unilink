@@ -106,7 +106,7 @@ class ADivision extends StatelessWidget {
                     width: 80,
                     height: 80),
                 Image(
-                    image: AssetImage('assets/images/logoupt.png'),
+                    image: AssetImage('assets/images/Logoupt.png'),
                     width: 80,
                     height: 80)
               ],

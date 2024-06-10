@@ -2,6 +2,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:flutter/widgets.dart';
 import 'package:unilink/src/screens/home/map/destination.dart';
 import 'package:unilink/src/models/home_choose.dart';
 import 'package:unilink/src/screens/home/event/events.dart';
@@ -87,133 +88,136 @@ class _MyHomeState extends State<MyHome> {
               hourToPresent = 'Buna seara, ';
             }
 
-            return Center(
-              child:
-                  ListView(physics: const ClampingScrollPhysics(), children: [
-                Column(
-                  children: [
-                    Container(
-                        margin: const EdgeInsets.only(top: 60.0),
-                        child: RichText(
-                          text: TextSpan(
-                            style: const TextStyle(
-                              fontSize: 30,
-                              color: Colors.black,
-                              fontFamily: 'Popppins',
-                            ),
-                            children: <TextSpan>[
-                              TextSpan(text: hourToPresent),
-                              TextSpan(
-                                text: name1,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  color: Color(int.parse(
-                                          "#8c52ff".substring(1, 7),
-                                          radix: 16) +
-                                      0xFF000000),
-                                ),
+            return Scaffold(
+              body: Container(
+                alignment: Alignment.center,
+                child:
+                    ListView(physics: const ClampingScrollPhysics(), children: [
+                  Column(
+                    children: [
+                      Container(
+                          margin: const EdgeInsets.only(top: 60.0),
+                          child: RichText(
+                            text: TextSpan(
+                              style: const TextStyle(
+                                fontSize: 30,
+                                color: Colors.black,
+                                fontFamily: 'Popppins',
                               ),
-                            ],
-                          ),
-                        )),
-                    Container(
-                      margin: const EdgeInsets.only(
-                        top: 50.0,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.only(
-                              right: 15.0,
-                            ),
-                            child: HomeChooseOptionBtn(
-                              text: 'Info',
-                              icon: Icons.info,
-                              function: () {
-                                Navigator.push(
-                                  context,
-                                  PageRouteBuilder(
-                                    pageBuilder:
-                                        (context, animation1, animation2) =>
-                                            const Info(),
-                                    transitionDuration: Duration.zero,
-                                    reverseTransitionDuration: Duration.zero,
+                              children: <TextSpan>[
+                                TextSpan(text: hourToPresent),
+                                TextSpan(
+                                  text: name1,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    color: Color(int.parse(
+                                            "#8c52ff".substring(1, 7),
+                                            radix: 16) +
+                                        0xFF000000),
                                   ),
-                                );
-                              },
-                            ),
-                          ),
-                          HomeChooseOptionBtn(
-                            text: 'Forum',
-                            icon: Icons.people_alt_outlined,
-                            function: () {
-                              Navigator.push(
-                                context,
-                                PageRouteBuilder(
-                                  pageBuilder:
-                                      (context, animation1, animation2) =>
-                                          const Forums(),
-                                  transitionDuration: Duration.zero,
-                                  reverseTransitionDuration: Duration.zero,
                                 ),
-                              );
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(
-                        top: 15.0,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.only(
-                              right: 15.0,
+                              ],
                             ),
-                            child: HomeChooseOptionBtn(
-                              text: 'Hartă',
-                              icon: Icons.map_outlined,
+                          )),
+                      Container(
+                        margin: const EdgeInsets.only(
+                          top: 50.0,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.only(
+                                right: 15.0,
+                              ),
+                              child: HomeChooseOptionBtn(
+                                text: 'Info',
+                                icon: Icons.info,
+                                function: () {
+                                  Navigator.push(
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder:
+                                          (context, animation1, animation2) =>
+                                              const Info(),
+                                      transitionDuration: Duration.zero,
+                                      reverseTransitionDuration: Duration.zero,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                            HomeChooseOptionBtn(
+                              text: 'Forum',
+                              icon: Icons.people_alt_outlined,
                               function: () {
                                 Navigator.push(
                                   context,
                                   PageRouteBuilder(
                                     pageBuilder:
                                         (context, animation1, animation2) =>
-                                            const Destination(),
+                                            const Forums(),
                                     transitionDuration: Duration.zero,
                                     reverseTransitionDuration: Duration.zero,
                                   ),
                                 );
                               },
                             ),
-                          ),
-                          HomeChooseOptionBtn(
-                              text: 'Evenimente',
-                              icon: Icons.event,
-                              function: () {
-                                Navigator.push(
-                                  context,
-                                  PageRouteBuilder(
-                                    pageBuilder:
-                                        (context, animation1, animation2) =>
-                                            const Events(),
-                                    transitionDuration: Duration.zero,
-                                    reverseTransitionDuration: Duration.zero,
-                                  ),
-                                );
-                              }),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-              ]),
+                      Container(
+                        margin: const EdgeInsets.only(
+                          top: 15.0,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.only(
+                                right: 15.0,
+                              ),
+                              child: HomeChooseOptionBtn(
+                                text: 'Hartă',
+                                icon: Icons.map_outlined,
+                                function: () {
+                                  Navigator.push(
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder:
+                                          (context, animation1, animation2) =>
+                                              const Destination(),
+                                      transitionDuration: Duration.zero,
+                                      reverseTransitionDuration: Duration.zero,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                            HomeChooseOptionBtn(
+                                text: 'Evenimente',
+                                icon: Icons.event,
+                                function: () {
+                                  Navigator.push(
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder:
+                                          (context, animation1, animation2) =>
+                                              const Events(),
+                                      transitionDuration: Duration.zero,
+                                      reverseTransitionDuration: Duration.zero,
+                                    ),
+                                  );
+                                }),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ]),
+              ),
             );
           }
         });

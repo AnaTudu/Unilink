@@ -41,44 +41,44 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBP4B_WUj_nvwXNHNGKUKSMZVC3YD6rtxI',
-    appId: '1:884733483668:web:2df902c30980c90dbd3281',
-    messagingSenderId: '884733483668',
-    projectId: 'licenta-425311',
-    authDomain: 'licenta-425311.firebaseapp.com',
-    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'licenta-425311.appspot.com',
-    measurementId: 'G-R5HFRF7CNY',
+    apiKey: 'AIzaSyCtG0uwk8ykGLlyVAMrC-QdHZRgiqYzJgY',
+    appId: '1:239405644229:web:eec99cd3b6ee1de834f3ac',
+    messagingSenderId: '239405644229',
+    projectId: 'unilink-3fef4',
+    authDomain: 'unilink-3fef4.firebaseapp.com',
+    databaseURL: 'https://unilink-3fef4-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'unilink-3fef4.appspot.com',
+    measurementId: 'G-Q2X4PREMH4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCk7Uk4dMk5UeIfFXY9kk9nJyD_pDHKrOI',
-    appId: '1:884733483668:android:7d12dfeca7ade9cfbd3281',
-    messagingSenderId: '884733483668',
-    projectId: 'licenta-425311',
-    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'licenta-425311.appspot.com',
+    apiKey: 'AIzaSyBruxjFLSlhxkzSotL9jGI1TZK_0C8wmZw',
+    appId: '1:239405644229:android:7d9a91208f57e23c34f3ac',
+    messagingSenderId: '239405644229',
+    projectId: 'unilink-3fef4',
+    databaseURL: 'https://unilink-3fef4-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'unilink-3fef4.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAT_IE88r1epOcp3HL-zlG-p4QNtLimgOw',
-    appId: '1:884733483668:ios:d72e915a591a76f3bd3281',
-    messagingSenderId: '884733483668',
-    projectId: 'licenta-425311',
-    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'licenta-425311.appspot.com',
+    apiKey: 'AIzaSyDgj3Cr0jhmQG4NJFkXMq4UEqXchitx_rQ',
+    appId: '1:239405644229:ios:c8c0615183eef6ee34f3ac',
+    messagingSenderId: '239405644229',
+    projectId: 'unilink-3fef4',
+    databaseURL: 'https://unilink-3fef4-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'unilink-3fef4.appspot.com',
     iosBundleId: 'com.example.unilink',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBP4B_WUj_nvwXNHNGKUKSMZVC3YD6rtxI',
-    appId: '1:884733483668:web:386353e225109ad6bd3281',
-    messagingSenderId: '884733483668',
-    projectId: 'licenta-425311',
-    authDomain: 'licenta-425311.firebaseapp.com',
-    databaseURL: 'https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'licenta-425311.appspot.com',
-    measurementId: 'G-HBL3EWG0Y7',
+    apiKey: 'AIzaSyCtG0uwk8ykGLlyVAMrC-QdHZRgiqYzJgY',
+    appId: '1:239405644229:web:502d1ad2de222b3a34f3ac',
+    messagingSenderId: '239405644229',
+    projectId: 'unilink-3fef4',
+    authDomain: 'unilink-3fef4.firebaseapp.com',
+    databaseURL: 'https://unilink-3fef4-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'unilink-3fef4.appspot.com',
+    measurementId: 'G-5FNB756KZ0',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(

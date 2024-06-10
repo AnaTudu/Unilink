@@ -24,7 +24,7 @@ class ECabinet extends StatelessWidget {
         Container(
             margin: const EdgeInsets.only(top: 50, bottom: 10),
             child: const Text(
-              'Cabinet Medical',
+              'Cabinet medical',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black,
@@ -57,7 +57,7 @@ class ECabinet extends StatelessWidget {
                     width: 80,
                     height: 80),
                 Image(
-                    image: AssetImage('assets/images/logoupt.png'),
+                    image: AssetImage('assets/images/Logoupt.png'),
                     width: 80,
                     height: 80)
               ],

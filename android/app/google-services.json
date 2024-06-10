@@ -1,33 +1,14 @@
 {
   "project_info": {
-    "project_number": "884733483668",
-    "firebase_url": "https://licenta-425311-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "licenta-425311",
-    "storage_bucket": "licenta-425311.appspot.com"
+    "project_number": "239405644229",
+    "firebase_url": "https://unilink-3fef4-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "unilink-3fef4",
+    "storage_bucket": "unilink-3fef4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:884733483668:android:248f87d8fefd94ebbd3281",
-        "android_client_info": {
-          "package_name": "com.example.ana"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCk7Uk4dMk5UeIfFXY9kk9nJyD_pDHKrOI"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:884733483668:android:7d12dfeca7ade9cfbd3281",
+        "mobilesdk_app_id": "1:239405644229:android:7d9a91208f57e23c34f3ac",
         "android_client_info": {
           "package_name": "com.example.unilink"
         }
@@ -35,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCk7Uk4dMk5UeIfFXY9kk9nJyD_pDHKrOI"
+          "current_key": "AIzaSyBruxjFLSlhxkzSotL9jGI1TZK_0C8wmZw"
         }
       ],
       "services": {
