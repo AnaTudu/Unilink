@@ -63,7 +63,7 @@ class _MyWidgetState extends State<MyWidget> {
         margin: const EdgeInsets.only(right: 65, left: 65),
         child: DropdownButton<String>(
           value: dropdownValue,
-          hint: const Text('Selectati scoala'),
+          hint: const Text('Selectați școala'),
           isExpanded: true,
           icon: const Icon(Icons.arrow_downward, size: 15),
           style: TextStyle(
@@ -92,7 +92,7 @@ class _MyWidgetState extends State<MyWidget> {
         margin: const EdgeInsets.only(top: 25, right: 65, left: 65),
         child: DropdownButton<String>(
           value: dropdownValue2,
-          hint: const Text('Selectati materia'),
+          hint: const Text('Selectați materia'),
           isExpanded: true,
           icon: const Icon(
             Icons.arrow_downward,
@@ -121,7 +121,7 @@ class _MyWidgetState extends State<MyWidget> {
         margin: const EdgeInsets.only(top: 25, right: 65, left: 65),
         child: DropdownButton<String>(
           value: dropdownValue3,
-          hint: const Text('Selectati profesor'),
+          hint: const Text('Selectați profesor'),
           icon: const Icon(
             Icons.arrow_downward,
             size: 15,
@@ -159,7 +159,7 @@ class _MyWidgetState extends State<MyWidget> {
               PageRouteBuilder(
                 pageBuilder: (context, animation1, animation2) => InfoTeacher(
                     role: 'Professor',
-                    email: 'ana@student.upt.ro',
+                    email: 'ionpop@upt.ro',
                     name: dropdownValue3,
                     area: dropdownValue2,
                     code: '21346',
@@ -179,7 +179,7 @@ class _MyWidgetState extends State<MyWidget> {
                   RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25.0),
               ))),
-          child: const Text('Cautare',
+          child: const Text('Căutare',
               style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700,

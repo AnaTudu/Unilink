@@ -118,7 +118,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Adauga un eveniment'),
+        title: const Text('Adaugă un eveniment'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -158,7 +158,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
                 const SizedBox(height: 16.0),
                 ElevatedButton(
                   onPressed: _pickImage,
-                  child: const Text('Selectati o imagine'),
+                  child: const Text('Selectați o imagine'),
                 ),
                 const SizedBox(height: 16.0),
                 if (_selectedImage != null) ...[
@@ -172,7 +172,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
                 ],
                 Row(
                   children: [
-                    const Text('Date & Time: '),
+                    const Text('Data și Ora: '),
                     Text(getFormattedDateTime()),
                     IconButton(
                       icon: const Icon(Icons.calendar_today),
@@ -182,7 +182,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
                 ),
                 Row(
                   children: [
-                    const Text('Time: '),
+                    const Text('Ora: '),
                     SizedBox(
                       width: 80.0,
                       child: TextFormField(
@@ -199,7 +199,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
                       ),
                     ),
                     const SizedBox(width: 8.0),
-                    const Text('Minutes: '),
+                    const Text('Minute: '),
                     SizedBox(
                       width: 80.0,
                       child: TextFormField(
@@ -285,7 +285,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
                       );
                     }
                   },
-                  child: const Text('Create Event'),
+                  child: const Text('Creați eveniment'),
                 ),
               ],
             ),

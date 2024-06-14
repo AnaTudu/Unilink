@@ -153,7 +153,7 @@ class Events extends StatelessWidget {
                         ),
                       ),
                       const Center(
-                        child: Text('Fara eveniment',
+                        child: Text('Fără evenimente',
                             style: TextStyle(fontFamily: 'Poppins')),
                       ),
                     ])));

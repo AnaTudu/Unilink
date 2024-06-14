@@ -15,7 +15,7 @@ class About extends StatelessWidget {
                   Navigator.of(context).pop();
                 },
                 child: const Text(
-                  'inapoi',
+                  'Inapoi',
                   style: TextStyle(
                     fontSize: 20,
                     fontFamily: 'Poppins',

@@ -133,7 +133,7 @@ class _ReaderScreenState extends State<EventsContainer> {
                           color: color,
                         ),
                       ),
-                      const Text('Interesati',
+                      const Text('Interesat',
                           style: TextStyle(
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w700,

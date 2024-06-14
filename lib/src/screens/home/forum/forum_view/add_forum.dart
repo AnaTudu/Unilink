@@ -93,7 +93,7 @@ class _DestinationState extends State<StatefulDestination> {
                                   Navigator.of(context).pop();
                                 },
                                 child: Text(
-                                  'inapoi',
+                                  'Inapoi',
                                   style: TextStyle(
                                     color: Color(int.parse(
                                             "#8c52ff".substring(1, 7),

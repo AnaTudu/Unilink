@@ -37,7 +37,7 @@ class ADivision extends StatelessWidget {
             margin:
                 const EdgeInsets.only(top: 50, bottom: 10, left: 40, right: 40),
             child: const Text(
-              'În cadrul Direcției Academice elevii efectuează toate actele legate de înscrierea și înscrierea lor în școlile Institutului. ',
+              'În cadrul Secretariatului elevii efectuează toate actele legate de înscrierea, gestionarea și rezolvarea nevoilor lor în școlile Institutului. ',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black, fontFamily: 'Poppins', fontSize: 15),

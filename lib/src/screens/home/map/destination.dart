@@ -50,7 +50,7 @@ class _DestinationState extends State<StatefulDestination> {
                         Navigator.of(context).pop();
                       },
                       child: const Text(
-                        'inapoi',
+                        'Inapoi',
                         style: TextStyle(
                           color: Color.fromARGB(255, 136, 81, 184),
                           fontSize: 20,
@@ -95,7 +95,7 @@ class _DestinationState extends State<StatefulDestination> {
                   copy.addAll(filter);
                 });
               }),
-              DestinationChooseBox('Selectați ', floor, floors,
+              /* DestinationChooseBox('Selectați ', floor, floors,
                   (String? value) {
                 setState(() {
                   floor = value!;
@@ -124,7 +124,7 @@ class _DestinationState extends State<StatefulDestination> {
                     notDone = false;
                   }
                 });
-              }),
+              }),*/
               IgnorePointer(
                 ignoring: notDone,
                 child: DestinationChooseBox('Selectati sala', room, filter,

@@ -28,7 +28,7 @@ class _CalendarState extends State<Calendar> {
     focusedDay = ValueNotifier(now);
     selectedWeekday = _getWeekday(now.weekday);
 
-    initializeDateFormatting('pt_BR', null);
+    initializeDateFormatting('ro', null);
   }
 
   Future<DocumentSnapshot<Map<String, dynamic>>> getUserData() async {
@@ -36,7 +36,7 @@ class _CalendarState extends State<Calendar> {
     final uid = FirebaseAuth.instance.currentUser?.uid;
     final userRef = FirebaseFirestore.instance
         .collection('orar')
-        .doc('cqXFUygcHmDsZhBWvdqT');
+        .doc('2D1rZjezHPVrgaftdTVT');
     final userData = await userRef.get();
     return userData;
   }
@@ -44,19 +44,19 @@ class _CalendarState extends State<Calendar> {
   String _getWeekday(int weekday) {
     switch (weekday) {
       case DateTime.monday:
-        return 'luni';
+        return 'Luni';
       case DateTime.tuesday:
-        return 'marti';
+        return 'Marti';
       case DateTime.wednesday:
-        return 'miercuri';
+        return 'Miercuri';
       case DateTime.thursday:
-        return 'joi';
+        return 'Joi';
       case DateTime.friday:
-        return 'vineri';
+        return 'Vineri';
       case DateTime.saturday:
-        return 'sambata';
+        return 'Sâmbătă';
       case DateTime.sunday:
-        return 'duminica';
+        return 'Duminică';
       default:
         return '';
     }
@@ -95,7 +95,7 @@ class _CalendarState extends State<Calendar> {
               highlightColor: Colors.transparent,
               iconSize: 25,
               color: Color(
-                  int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                  int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -129,11 +129,11 @@ class _CalendarState extends State<Calendar> {
               final sexta = convertStringToList(userData.get('Vineri'));
 
               Map<String, List<String>> scheduleData = {
-                'luni': segunda,
-                'marti': terca,
-                'miercuri': quarta,
-                'joi': quinta,
-                'vineri': sexta,
+                'Luni': segunda,
+                'Marti': terca,
+                'Miercuri': quarta,
+                'Joi': quinta,
+                'Vineri': sexta,
               };
 
               List<String> selectedDaySchedule =
@@ -155,10 +155,9 @@ class _CalendarState extends State<Calendar> {
                     firstDay: firstDay,
                     lastDay: lastDay,
                     focusedDay: focusedDay.value!,
-                    locale: 'pt_BR', // Define o idioma como português do Brasil
+                    locale: 'ro',
                     calendarBuilders: CalendarBuilders(
                       dowBuilder: (context, day) {
-                        // Personaliza o formato dos dias da semana
                         return Center(
                           child: Text(
                             _getWeekday(day.weekday).capitalize(),
@@ -172,11 +171,11 @@ class _CalendarState extends State<Calendar> {
                       },
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 7),
                   Container(
                     padding: const EdgeInsets.only(left: 30),
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 0.344,
+                    height: MediaQuery.of(context).size.height * 0.327,
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(50),

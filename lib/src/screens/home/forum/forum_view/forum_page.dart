@@ -85,7 +85,7 @@ class _ReaderScreenState extends State<ForumPostCardComments> {
                   },
                   child: ListView.builder(
                     itemCount: widget.forumPost.comments.length,
-                    padding: const EdgeInsets.only(bottom: 25, top: 25),
+                    padding: const EdgeInsets.only(bottom: 25, top: 15),
                     itemBuilder: (BuildContext context, int index) {
                       return ForumCommentCard(
                           comment: widget.forumPost.comments[index]);
@@ -93,7 +93,7 @@ class _ReaderScreenState extends State<ForumPostCardComments> {
                   )),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 // ignore: sized_box_for_whitespace
@@ -105,7 +105,7 @@ class _ReaderScreenState extends State<ForumPostCardComments> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(0),
                       ),
-                      hintText: 'Adauga comentariu',
+                      hintText: 'Add',
                       hintStyle: const TextStyle(
                         color: Colors.grey,
                       ),
@@ -118,17 +118,25 @@ class _ReaderScreenState extends State<ForumPostCardComments> {
                         fontFamily: 'Poppins'),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    enroll(_emailController.text);
-                    setState(() {
-                      final uid = FirebaseAuth.instance.currentUser?.uid;
-                      widget.forumPost.comments.add(Comment(
-                          content: _emailController.text, creator: uid!));
-                      widget.forumPost.ncomments++;
-                    });
-                  },
-                  child: const Icon(Icons.add),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton(
+                    onPressed: () {
+                      enroll(_emailController.text);
+                      setState(() {
+                        final uid = FirebaseAuth.instance.currentUser?.uid;
+                        widget.forumPost.comments.add(Comment(
+                            content: _emailController.text, creator: uid!));
+                        widget.forumPost.ncomments++;
+                      });
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                          right:
+                              30), // Adds padding to the right of the icon, pushing it to the left
+                      child: const Icon(Icons.add),
+                    ),
+                  ),
                 ),
               ],
             ),

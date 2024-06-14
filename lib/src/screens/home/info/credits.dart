@@ -57,7 +57,7 @@ class _CreditsState extends State<Credits> {
             Container(
               margin: const EdgeInsets.only(bottom: 60),
               child: const Image(
-                image: AssetImage("assets/images/aboutUni.png"),
+                image: AssetImage("assets/images/finall.png"),
                 width: 400,
                 height: 400,
               ),

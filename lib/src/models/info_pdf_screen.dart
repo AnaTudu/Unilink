@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'pdf_document_model.dart';
 
-// ignore: must_be_immutable
 class ReaderScreen extends StatefulWidget {
   ReaderScreen(this.doc, {super.key});
-  PDFDocument doc;
+  final PDFDocument doc;
 
   @override
   State<ReaderScreen> createState() => _ReaderScreenState();

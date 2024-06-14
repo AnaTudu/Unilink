@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../data/dataset.dart';
-import '../../../models/info_pdf.dart';
+import '../../../models/info_pdf_screen.dart';
 
 class Menus extends StatelessWidget {
   const Menus({super.key});

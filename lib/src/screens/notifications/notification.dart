@@ -70,7 +70,7 @@ class _NotificationListPageState extends State<Notifications> {
               highlightColor: Colors.transparent,
               iconSize: 25,
               color: Color(
-                  int.parse("#0097b2".substring(1, 7), radix: 16) + 0xFF000000),
+                  int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
               onPressed: () {
                 Navigator.pop(context);
               }),
@@ -159,7 +159,7 @@ class _NotificationListPageState extends State<Notifications> {
                           leading: Icon(
                             icon,
                             size: 40,
-                            color: Color(int.parse("#0097b2".substring(1, 7),
+                            color: Color(int.parse("#8c52ff".substring(1, 7),
                                     radix: 16) +
                                 0xFF000000),
                           ),

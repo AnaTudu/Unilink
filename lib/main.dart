@@ -81,7 +81,7 @@ class _MainState extends State<Main> {
           ),
           AuthenticationTextField(
             controller: _passwordController,
-            hintText: 'Password',
+            hintText: 'Parolă',
             isPassword: true,
           ),
           const SizedBox(height: 10),

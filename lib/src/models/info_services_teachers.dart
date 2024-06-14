@@ -180,12 +180,6 @@ class InfoTeacher extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Text('Acces cu harta',
-                          style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontSize: 18,
-                              color: Colors.purple),
-                          textAlign: TextAlign.end),
                     ],
                   ),
                 )))

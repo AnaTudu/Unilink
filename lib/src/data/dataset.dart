@@ -7,9 +7,8 @@ List<Event> eventsDataset = [];
 List<Forum> forumsDataset = [];
 const List<String> schools = <String>['Liceu'];
 const List<String> blocks = <String>[
-  'Bloc A',
-  'Bloc B',
-  'Bloc C',
+  'Cladirea A',
+  'Cladirea B',
 ];
 const List<String> floors = <String>['Etaj 1', 'Etaj 2', 'Etaj 3'];
 List<RoomLocation> roomsDataset = [];

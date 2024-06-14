@@ -8,7 +8,7 @@ import 'dart:math' show cos, sqrt, asin;
 import '../../../models/room_location.dart';
 
 class HomeMap extends StatefulWidget {
-  const HomeMap(this.room, {super.key});
+  const HomeMap(this.room, {Key? key}) : super(key: key);
 
   final RoomLocation room;
 
@@ -144,7 +144,7 @@ class _HomeMapState extends State<HomeMap> {
                           Navigator.of(context).pop();
                         },
                         child: const Text(
-                          'inapoi',
+                          'Inapoi',
                           style: TextStyle(
                             fontSize: 20,
                             fontFamily: 'Poppins',
@@ -153,7 +153,7 @@ class _HomeMapState extends State<HomeMap> {
                       ),
                     ),
                     const Text(
-                      'Mapa',
+                      'Hartă',
                       style: TextStyle(
                         fontSize: 40,
                         fontFamily: 'Poppins',
@@ -162,7 +162,7 @@ class _HomeMapState extends State<HomeMap> {
                       ),
                     ),
                     Text(
-                      '${widget.room.school}: Bloco ${widget.room.room[0]}, Piso ${widget.room.room[1]}, Sala ${widget.room.room}',
+                      '${widget.room.school}: Clădirea ${widget.room.room[0]}, Etaj ${widget.room.room[1]}, Sala ${widget.room.room}',
                       style: const TextStyle(
                         fontSize: 20,
                         fontFamily: 'Poppins',

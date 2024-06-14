@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../data/dataset.dart';
-import 'package:unilink/src/models/info_pdf.dart';
+import 'package:unilink/src/models/info_pdf_screen.dart';
 
 class Calendars extends StatelessWidget {
   const Calendars({super.key});

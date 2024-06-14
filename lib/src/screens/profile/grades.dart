@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class NotasDisciplinasPage extends StatefulWidget {
-  const NotasDisciplinasPage({super.key});
+  const NotasDisciplinasPage({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _NotasDisciplinasPageState createState() => _NotasDisciplinasPageState();
 }
 
@@ -42,7 +41,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
       }
 
       notasMap[ano]![semestre]!.add({
-        'nume': nome,
+        'nome': nome,
         'nota': nota,
       });
     }
@@ -72,7 +71,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
     return MaterialApp(
       title: 'Unilink',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.purple),
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -86,7 +85,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
               highlightColor: Colors.transparent,
               iconSize: 25,
               color: Color(
-                  int.parse("0097b2".substring(0, 6), radix: 16) + 0xFF000000),
+                  int.parse("#8c52ff".substring(1, 7), radix: 16) + 0xFF000000),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -121,7 +120,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    "Media Finala: ${mediaNotas.toStringAsFixed(2)}",
+                    "Media Finală: ${mediaNotas.toStringAsFixed(2)}",
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -144,12 +143,12 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      color: const Color.fromRGBO(4, 124, 145, 1),
+                      color: Color.fromARGB(255, 193, 146, 227),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        for (int i = 1; i <= 3; i++)
+                        for (int i = 9; i <= 12; i++)
                           FutureBuilder<QuerySnapshot>(
                             future: firestore.collection('materii').get(),
                             builder: (BuildContext context,
@@ -185,7 +184,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                                   }
 
                                   notasMap[ano]![semestre]!.add({
-                                    'nume': nome,
+                                    'nome': nome,
                                     'nota': nota,
                                   });
                                 }
@@ -224,7 +223,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                                         padding: const EdgeInsets.symmetric(
                                             vertical: 8.0),
                                         child: Text(
-                                          '$iº An',
+                                          'Clasa $i ',
                                           style: const TextStyle(
                                             fontSize: 24,
                                             fontWeight: FontWeight.bold,
@@ -252,7 +251,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                                                   horizontal: 16.0,
                                                 ),
                                                 child: Text(
-                                                  '${entry.key}º Semestru',
+                                                  'Semestru ${entry.key} ',
                                                   style: const TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
@@ -279,7 +278,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        disciplina['nume'],
+                                                        disciplina['nome'],
                                                         style: const TextStyle(
                                                           fontSize: 16,
                                                           fontWeight:

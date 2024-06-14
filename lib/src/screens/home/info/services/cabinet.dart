@@ -36,7 +36,7 @@ class ECabinet extends StatelessWidget {
             margin:
                 const EdgeInsets.only(top: 50, bottom: 40, left: 40, right: 40),
             child: const Text(
-              'Biroul de asistență pentru studenți E+ oferă asistență față în față studenților pentru a-i ajuta să rezolve îndoielile și să îi direcționeze către serviciile relevante.',
+              'Cabinetul medical școlar servește drept prim punct de contact pentru îngrijiri medicale de bază în caz de accidente minore sau probleme de sănătate care apar pe parcursul zilei școlare. Acesta este echipat să gestioneze situații precum tăieturi minore, vânătăi, dureri de cap, și alte afecțiuni comune în rândul copiilor. De asemenea, monitorizează și gestionază condițiile medicale cronice ale elevilor, cum ar fi astmul sau diabetul, în colaborare cu părinții și medicii curanți.',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.black, fontFamily: 'Poppins', fontSize: 15),

@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:local_auth/local_auth.dart';
+//import 'package:local_auth/local_auth.dart';
 import 'package:unilink/src/models/profile_choose_option_btn.dart';
 import 'package:unilink/src/screens/profile/purchases.dart';
 import '../../../main.dart';
@@ -33,7 +33,7 @@ class _ProfileState extends State<Profile> {
     return userData;
   }
 
-  Future<void> _authenticateFingerprint() async {
+/*  Future<void> _authenticateFingerprint() async {
     final localAuth = LocalAuthentication();
     final isFingerprintAvailable = await localAuth.canCheckBiometrics;
 
@@ -103,7 +103,7 @@ class _ProfileState extends State<Profile> {
         );
       },
     );
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -227,13 +227,15 @@ class _ProfileState extends State<Profile> {
                                   0xFF000000),
                               backgroundColor: Colors.white,
                               function: () {
-                                if (FirebaseAuth.instance.currentUser != null) {
-                                  _authenticateFingerprint();
-                                } else {
-                                  _showFingerprintUnavailableDialog();
-                                }
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const NotasDisciplinasPage()),
+                                );
                               },
                             ),
+
                             const SizedBox(
                               height: 5,
                             ),
@@ -256,7 +258,7 @@ class _ProfileState extends State<Profile> {
                               height: 5,
                             ),
                             ProfileChooseOptionBtn(
-                              text: 'Cumpraturi',
+                              text: 'Achiziții',
                               textColor: Color(int.parse(
                                       "#8c52ff".substring(1, 7),
                                       radix: 16) +

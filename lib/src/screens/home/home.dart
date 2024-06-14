@@ -81,11 +81,11 @@ class _MyHomeState extends State<MyHome> {
             String hourToPresent;
 
             if (hour >= 6 && hour <= 12) {
-              hourToPresent = 'Buna dimineata, ';
+              hourToPresent = 'Bună dimineața, ';
             } else if (hour > 12 && hour <= 19) {
-              hourToPresent = 'Buna ziua, ';
+              hourToPresent = 'Bună ziua, ';
             } else {
-              hourToPresent = 'Buna seara, ';
+              hourToPresent = 'Bună seara, ';
             }
 
             return Scaffold(

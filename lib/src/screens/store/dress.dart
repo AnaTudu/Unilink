@@ -74,7 +74,7 @@ class _AcademicState extends State<Academic> {
     final User? user = FirebaseAuth.instance.currentUser;
     if (user != null) {
       final Map<String, dynamic> itemData = {
-        'codigo': rng.toString(),
+        'cod': rng.toString(),
         'data': DateTime.now(),
         'user': user.uid,
         'type': 'Uniforma'
@@ -98,12 +98,12 @@ class _AcademicState extends State<Academic> {
     return Column(
       children: [
         const Text(
-          'Uniforma',
+          'Uniformă',
           style: TextStyle(
               fontSize: 35, fontFamily: 'Poppins', fontWeight: FontWeight.w700),
         ),
         Text(
-          'Sold Curent: $currentMoney€',
+          'Sold Curent: $currentMoney Ron',
           style: const TextStyle(
             fontSize: 20,
             fontFamily: 'Poppins',
@@ -131,7 +131,7 @@ class _AcademicState extends State<Academic> {
             TextButton(
               onPressed: buyItem,
               child: Text(
-                'Cumpara',
+                'Cumpără',
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w700,

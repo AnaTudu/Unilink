@@ -45,9 +45,9 @@ class _MyWidgetState extends State<MyWidget> {
   }
 
   void buyTicket() {
-    if (currentMoney >= 2) {
+    if (currentMoney >= 10) {
       setState(() {
-        currentMoney -= 2;
+        currentMoney -= 10;
         rng = Random().nextInt(1000000);
         saveTicketToFirestore();
         updateMoneyInFirestore();
@@ -82,10 +82,10 @@ class _MyWidgetState extends State<MyWidget> {
     final User? user = FirebaseAuth.instance.currentUser;
     if (user != null) {
       final Map<String, dynamic> ticketData = {
-        'codigo': rng.toString(),
+        'cod': rng.toString(),
         'data': DateTime.now(),
         'user': user.uid,
-        'type': 'Parolă',
+        'type': 'TicketMasa',
       };
       await FirebaseFirestore.instance.collection('tickets').add(ticketData);
     }
@@ -106,12 +106,12 @@ class _MyWidgetState extends State<MyWidget> {
     return Column(
       children: [
         const Text(
-          'Parolă',
+          'Tichete de masă',
           style: TextStyle(
               fontSize: 35, fontFamily: 'Poppins', fontWeight: FontWeight.w700),
         ),
         Text(
-          'Sold: $currentMoney€',
+          'Sold: $currentMoney Ron',
           style: const TextStyle(
             fontSize: 20,
             fontFamily: 'Poppins',

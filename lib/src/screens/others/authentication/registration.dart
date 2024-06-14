@@ -47,7 +47,7 @@ class Registration extends StatelessWidget {
             const SizedBox(height: 35),
             AuthenticationTextField(
               controller: _nameController,
-              hintText: 'Nome',
+              hintText: 'Nume',
             ),
             AuthenticationTextField(
               controller: _emailController,
@@ -55,21 +55,21 @@ class Registration extends StatelessWidget {
             ),
             AuthenticationTextField(
               controller: _passwordController,
-              hintText: 'Password',
+              hintText: 'Parolă',
               isPassword: true,
             ),
             AuthenticationTextField(
               controller: _confirmPasswordController,
-              hintText: 'Confirmare password',
+              hintText: 'Confirmare parolă',
               isPassword: true,
             ),
             AuthenticationTextField(
               controller: _studentNumberController,
-              hintText: 'Numarul elevului',
+              hintText: 'Numărul elevului',
             ),
             const SizedBox(height: 30),
             AuthenticationBtn(
-                text: 'Creati cont',
+                text: 'Creați cont',
                 backgroundColor: Color(
                     int.parse("#8c52ff".substring(1, 7), radix: 16) +
                         0xFF000000),
@@ -90,7 +90,7 @@ class Registration extends StatelessWidget {
                                     0xFF000000),
                               )),
                           content: const Text(
-                              '\nParola trebuie să aibă 6 lungime!\n\n')),
+                              '\nParola trebuie să aibă minim 6 caractere!\n\n')),
                     );
                   } else if (_nameController.text.length > 15) {
                     showDialog(
@@ -106,7 +106,8 @@ class Registration extends StatelessWidget {
                                         radix: 16) +
                                     0xFF000000),
                               )),
-                          content: const Text('\nNume max 15 length!\n\n')),
+                          content: const Text(
+                              '\nNume de lungime msximă 15 caractere!\n\n')),
                     );
                   } else if (_nameController.text != '' &&
                       _emailController.text != '' &&

@@ -155,8 +155,9 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                   ),
                                   const SizedBox(height: 40),
                                   AuthenticationBtn(
-                                    text: 'Reseteaza parola',
-                                    backgroundColor: Colors.blue,
+                                    text: 'Schimbă numele',
+                                    backgroundColor:
+                                        Color.fromARGB(255, 146, 74, 187),
                                     foregroundColor: Colors.white,
                                     function: () {
                                       User? user =
@@ -172,7 +173,8 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                   ),
                                   AuthenticationBtn(
                                       text: 'Salveaza modificari',
-                                      backgroundColor: Colors.blue,
+                                      backgroundColor:
+                                          Color.fromARGB(255, 146, 74, 187),
                                       foregroundColor: Colors.white,
                                       function: () {
                                         if (_nomeController.text == '' &&
@@ -189,7 +191,11 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                                         child: Icon(
                                                           Icons.warning,
                                                           size: 50,
-                                                          color: Colors.blue,
+                                                          color: Color.fromARGB(
+                                                              255,
+                                                              146,
+                                                              74,
+                                                              187),
                                                         )),
                                                     content: Text(
                                                         '\nCompletați câmpurile necesare!\n\n')),
@@ -207,7 +213,7 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                                       Icons.warning,
                                                       size: 50,
                                                       color: Color(int.parse(
-                                                              "#0097b2"
+                                                              "#8c52ff"
                                                                   .substring(
                                                                       1, 7),
                                                               radix: 16) +
