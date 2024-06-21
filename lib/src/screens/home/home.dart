@@ -188,7 +188,7 @@ class _MyHomeState extends State<MyHome> {
                                     PageRouteBuilder(
                                       pageBuilder:
                                           (context, animation1, animation2) =>
-                                              const Destination(),
+                                              Destination(),
                                       transitionDuration: Duration.zero,
                                       reverseTransitionDuration: Duration.zero,
                                     ),

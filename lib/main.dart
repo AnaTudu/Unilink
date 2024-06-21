@@ -1,3 +1,4 @@
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:unilink/src/screens/home/info/credits.dart';
@@ -15,6 +16,11 @@ void main() async {
   await Firebase.initializeApp();
   await Location().requestPermission();
   LocalNotificationService.initialize();
+  // Initialize Firebase App Check with Play Integrity
+  await FirebaseAppCheck.instance.activate(
+    androidProvider: AndroidProvider
+        .playIntegrity, // Use AndroidProvider.safetyNet for older devices
+  );
   runApp(const MaterialApp(
     home: Splash(),
     debugShowCheckedModeBanner: false,

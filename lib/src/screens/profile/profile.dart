@@ -52,7 +52,7 @@ class _ProfileState extends State<Profile> {
             // ignore: use_build_context_synchronously
             context,
             MaterialPageRoute(
-                builder: (context) => const NotasDisciplinasPage()),
+                builder: (context) => const NotePage()),
           );
         } else {
           _showFingerprintErrorDialog('Amprenta digitală nevalidă.');
@@ -230,8 +230,7 @@ class _ProfileState extends State<Profile> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          const NotasDisciplinasPage()),
+                                      builder: (context) => const NotePage()),
                                 );
                               },
                             ),

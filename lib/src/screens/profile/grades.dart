@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class NotasDisciplinasPage extends StatefulWidget {
-  const NotasDisciplinasPage({Key? key}) : super(key: key);
+class NotePage extends StatefulWidget {
+  const NotePage({Key? key}) : super(key: key);
 
   @override
-  _NotasDisciplinasPageState createState() => _NotasDisciplinasPageState();
+  _NotePageState createState() => _NotePageState();
 }
 
-class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
+class _NotePageState extends State<NotePage> {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   late double containerWidth;
   Map<String, bool> expandedYears = {};
@@ -27,40 +27,40 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
     Map<String, Map<String, List<Map<String, dynamic>>>> notasMap = {};
 
     for (DocumentSnapshot document in snapshot.docs) {
-      String ano = document['An'];
-      String semestre = document['Semestru'];
-      String nome = document['Nume'];
+      String an = document['An'];
+      String semestru = document['Semestru'];
+      String nume = document['Nume'];
       int nota = document['Nota'];
 
-      if (!notasMap.containsKey(ano)) {
-        notasMap[ano] = {};
+      if (!notasMap.containsKey(an)) {
+        notasMap[an] = {};
       }
 
-      if (!notasMap[ano]!.containsKey(semestre)) {
-        notasMap[ano]![semestre] = [];
+      if (!notasMap[an]!.containsKey(semestru)) {
+        notasMap[an]![semestru] = [];
       }
 
-      notasMap[ano]![semestre]!.add({
-        'nome': nome,
+      notasMap[an]![semestru]!.add({
+        'nume': nume,
         'nota': nota,
       });
     }
 
     // Calculate the average of the grades
-    double totalNotas = 0.0;
-    int disciplinasCount = 0;
+    double totalNote = 0.0;
+    int disciplineCount = 0;
 
     for (var entry in notasMap.entries) {
       for (var semester in entry.value.values) {
         for (var disciplina in semester) {
-          totalNotas += disciplina['nota'];
-          disciplinasCount++;
+          totalNote += disciplina['nota'];
+          disciplineCount++;
         }
       }
     }
 
     setState(() {
-      mediaNotas = disciplinasCount > 0 ? (totalNotas / disciplinasCount) : 0.0;
+      mediaNotas = disciplineCount > 0 ? (totalNote / disciplineCount) : 0.0;
     });
   }
 
@@ -170,41 +170,41 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
 
                                 for (DocumentSnapshot document
                                     in snapshot.data!.docs) {
-                                  String ano = document['An'];
-                                  String semestre = document['Semestru'];
-                                  String nome = document['Nume'];
+                                  String an = document['An'];
+                                  String semestru = document['Semestru'];
+                                  String nume = document['Nume'];
                                   int nota = document['Nota'];
 
-                                  if (!notasMap.containsKey(ano)) {
-                                    notasMap[ano] = {};
+                                  if (!notasMap.containsKey(an)) {
+                                    notasMap[an] = {};
                                   }
 
-                                  if (!notasMap[ano]!.containsKey(semestre)) {
-                                    notasMap[ano]![semestre] = [];
+                                  if (!notasMap[an]!.containsKey(semestru)) {
+                                    notasMap[an]![semestru] = [];
                                   }
 
-                                  notasMap[ano]![semestre]!.add({
-                                    'nome': nome,
+                                  notasMap[an]![semestru]!.add({
+                                    'nume': nume,
                                     'nota': nota,
                                   });
                                 }
 
                                 // Calculate the average of the grades
-                                double totalNotas = 0.0;
-                                int disciplinasCount = 0;
+                                double totalNote = 0.0;
+                                int disciplineCount = 0;
 
                                 for (var entry in notasMap.entries) {
                                   for (var semester in entry.value.values) {
                                     for (var disciplina in semester) {
-                                      totalNotas += disciplina['nota'];
-                                      disciplinasCount++;
+                                      totalNote += disciplina['nota'];
+                                      disciplineCount++;
                                     }
                                   }
                                 }
 
                                 // ignore: unused_local_variable
-                                double mediaNotas = disciplinasCount > 0
-                                    ? (totalNotas / disciplinasCount)
+                                double mediaNote = disciplineCount > 0
+                                    ? (totalNote / disciplineCount)
                                     : 0.0;
 
                                 return Column(
@@ -278,7 +278,7 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        disciplina['nome'],
+                                                        disciplina['nume'],
                                                         style: const TextStyle(
                                                           fontSize: 16,
                                                           fontWeight:
@@ -321,5 +321,5 @@ class _NotasDisciplinasPageState extends State<NotasDisciplinasPage> {
 }
 
 void main() {
-  runApp(const NotasDisciplinasPage());
+  runApp(const NotePage());
 }

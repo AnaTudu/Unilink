@@ -73,7 +73,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
 
       // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Event created successfully')),
+        const SnackBar(content: Text('Eveniment creat cu succes')),
       );
 
       // Clear the form fields after creating the event
@@ -82,7 +82,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
       _selectedImage = null;
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to create event')),
+        const SnackBar(content: Text('Eroare la crearea evenimentului')),
       );
     }
   }
@@ -150,7 +150,7 @@ class _CreateEventPageState extends State<CreateEventPage> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Adaugati descrierea evenimentului';
+                      return 'Adăugați descrierea evenimentului';
                     }
                     return null;
                   },

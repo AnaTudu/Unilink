@@ -17,9 +17,8 @@ class EditProfilePage extends StatefulWidget {
 }
 
 class _PaginaDeRegistoState extends State<EditProfilePage> {
-  final TextEditingController _nomeController = TextEditingController();
-  final TextEditingController _numeroDeAlunoController =
-      TextEditingController();
+  final TextEditingController _numeController = TextEditingController();
+  final TextEditingController _nrElevController = TextEditingController();
 
   Future<DocumentSnapshot<Map<String, dynamic>>> getUserData() async {
     final uid = FirebaseAuth.instance.currentUser?.uid;
@@ -146,11 +145,11 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                               child: Column(
                                 children: [
                                   AuthenticationTextField(
-                                    controller: _nomeController,
+                                    controller: _numeController,
                                     hintText: name,
                                   ),
                                   AuthenticationTextField(
-                                    controller: _numeroDeAlunoController,
+                                    controller: _nrElevController,
                                     hintText: number,
                                   ),
                                   const SizedBox(height: 40),
@@ -177,9 +176,8 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                           Color.fromARGB(255, 146, 74, 187),
                                       foregroundColor: Colors.white,
                                       function: () {
-                                        if (_nomeController.text == '' &&
-                                            _numeroDeAlunoController.text ==
-                                                '') {
+                                        if (_numeController.text == '' &&
+                                            _nrElevController.text == '') {
                                           showDialog(
                                             context: context,
                                             builder: (context) =>
@@ -200,7 +198,7 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                                     content: Text(
                                                         '\nCompletați câmpurile necesare!\n\n')),
                                           );
-                                        } else if (_nomeController.text.length >
+                                        } else if (_numeController.text.length >
                                             15) {
                                           showDialog(
                                             context: context,
@@ -230,9 +228,8 @@ class _PaginaDeRegistoState extends State<EditProfilePage> {
                                                 .collection('users')
                                                 .doc(user.uid)
                                                 .update({
-                                              'name': _nomeController.text,
-                                              'number':
-                                                  _numeroDeAlunoController.text,
+                                              'name': _numeController.text,
+                                              'number': _nrElevController.text,
                                               'photo': FirebaseAuth
                                                   .instance.currentUser?.uid,
                                             }).then((_) {
