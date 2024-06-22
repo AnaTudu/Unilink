@@ -107,12 +107,12 @@ class Events extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                width: 170,
+                                width: 100,
                                 child: Text(
-                                  'Evenimente',
-                                  textAlign: TextAlign.left,
+                                  'Eveniment',
+                                  textAlign: TextAlign.right,
                                   style: TextStyle(
-                                    fontSize: 25,
+                                    fontSize: 5,
                                     fontFamily: 'Poppins',
                                     color: Colors.black,
                                     fontWeight: FontWeight.w700,
@@ -193,7 +193,7 @@ class Events extends StatelessWidget {
                               'Evenimente',
                               textAlign: TextAlign.left,
                               style: TextStyle(
-                                fontSize: 25,
+                                fontSize: 24,
                                 fontFamily: 'Poppins',
                                 color: Colors.black,
                                 fontWeight: FontWeight.w700,

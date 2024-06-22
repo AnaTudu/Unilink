@@ -122,18 +122,18 @@ class _CalendarState extends State<Calendar> {
               return const Center(child: Text('Eroare la obtinera datelor'));
             } else {
               final userData = snapshot.data!;
-              final segunda = convertStringToList(userData.get('Luni'));
-              final terca = convertStringToList(userData.get('Marti'));
-              final quarta = convertStringToList(userData.get('Miercuri'));
-              final quinta = convertStringToList(userData.get('Joi'));
-              final sexta = convertStringToList(userData.get('Vineri'));
+              final luni = convertStringToList(userData.get('Luni'));
+              final marti = convertStringToList(userData.get('Marti'));
+              final miercuri = convertStringToList(userData.get('Miercuri'));
+              final joi = convertStringToList(userData.get('Joi'));
+              final vineri = convertStringToList(userData.get('Vineri'));
 
               Map<String, List<String>> scheduleData = {
-                'Luni': segunda,
-                'Marti': terca,
-                'Miercuri': quarta,
-                'Joi': quinta,
-                'Vineri': sexta,
+                'Luni': luni,
+                'Marti': marti,
+                'Miercuri': miercuri,
+                'Joi': joi,
+                'Vineri': vineri,
               };
 
               List<String> selectedDaySchedule =
@@ -171,7 +171,7 @@ class _CalendarState extends State<Calendar> {
                       },
                     ),
                   ),
-                  const SizedBox(height: 7),
+                  const SizedBox(height: 62),
                   Container(
                     padding: const EdgeInsets.only(left: 30),
                     width: MediaQuery.of(context).size.width,
@@ -207,7 +207,7 @@ class _CalendarState extends State<Calendar> {
                                     padding: const EdgeInsets.only(
                                         left: 0, right: 0),
                                     width:
-                                        MediaQuery.of(context).size.width * 0.8,
+                                        MediaQuery.of(context).size.width * 0.5,
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
